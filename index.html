@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>BMI CALCULATOR </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+
+
+    
+    
+
+    <div class="container">
+
+      <form>
+        <label>
+          <input type="radio" name="units" value="metric" checked> Metric
+        </label>
+
+        <label>
+          <input type="radio" name="units" value="metric" checked> Imperial
+        </label>
+
+
+        <br>
+           <label>
+             Height (cm):
+             <input type="number" name="height" required>
+           </label>
+           <br>
+           <label>
+            Weight (kg):
+            <input type="number" name="weight" required>
+          </label>
+          <br>
+
+          <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+          <button type="reset" onclick="resetForm()">reset</button>
+
+          <button type="button" onclick="loadBMI()">Load BMI Data</button>
+
+      </form>
+
+      <div id="result"></div>
+
+      <canvas id="chart" width="600" height="400"></canvas>
+
+
+    </div>
+
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
